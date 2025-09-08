@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import NotFound from "../pages/NotFound/NotFound";
 import Authentication from "../components/Auth/Authentication";
+import Dashboard from "../pages/Dashboard/page";
 
 const AppRoutes = () => {
   return (
@@ -10,7 +11,7 @@ const AppRoutes = () => {
       <Route element={<Authentication />}>
         <Route element={<MainLayout />}>
           {/* Add more layout-protected routes here */}
-          <Route path="/dashboard" element={<>hello from dashboard</>} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<Navigate to="/dashboard" />} />
         </Route>
       </Route>
