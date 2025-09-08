@@ -1,4 +1,16 @@
 {
+
+    "header": {
+        "projects": {
+            "client": "Client",
+            "ib": "IB",
+            "investor": "Investor",
+            "provider": "Provider",
+            "gold": "Gold",
+            "portal": "Portal"
+        }
+    },
+
     "sidebar": {
         "dashboard": "Dashboard",
         "wallets": "Wallets",
@@ -8,5 +20,19 @@
         "settings": "Settings",
         "reports": "Reports",
         "users": "Users"
+    },
+
+    "dashboard": {
+        "clientJourney": {
+            "title": "Welcome",
+            "subtitle": "You're almost there – Let’s get trading!"
+        },
+        "progress": {
+            "step1": "Sign up",
+            "step2": "Open Account",
+            "step3": "Verify Documents",
+            "step4": "Deposit Funds",
+            "step5": "Start Trading"
+        }
     }
 }
