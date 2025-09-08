@@ -1,0 +1,12 @@
+{
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "wallets": "Wallets",
+        "transactions": "Transactions",
+        "deposits": "Deposits",
+        "withdrawals": "Withdrawals",
+        "settings": "Settings",
+        "reports": "Reports",
+        "users": "Users"
+    }
+}

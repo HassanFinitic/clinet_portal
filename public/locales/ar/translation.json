@@ -1,0 +1,12 @@
+{
+    "sidebar": {
+        "dashboard": "الرئيسية",
+        "wallets": "المحفظات",
+        "transactions": "العمليات",
+        "deposits": "الإيداعات",
+        "withdrawals": "الإسلاعات",
+        "settings": "الإعدادات",
+        "reports": "التقارير",
+        "users": "المستخدمين"
+    }
+}
