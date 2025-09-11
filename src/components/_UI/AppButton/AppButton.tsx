@@ -9,9 +9,10 @@ const CustomButtonRoot = styled(Button)(() => ({
   borderRadius: '12px',
   fontWeight: 600,
   padding: "2px 12px",
-  color: "green",
+  color: "white",
   width: 'fit-content',
-  boxShadow: 'none',
+  boxShadow: '1px 1px 5px rgba(0, 0, 0, 0.1)',
+  transition: 'all 0.3s ease-in-out',
   '&:hover': {
     boxShadow: 'none',
   },
