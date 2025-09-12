@@ -18,7 +18,7 @@ const CustomButtonRoot = styled(Button)(() => ({
   },
 }));
 
-interface CustomButtonProps extends ButtonProps {
+export interface CustomButtonProps extends ButtonProps {
   children: React.ReactNode;
 }
 
