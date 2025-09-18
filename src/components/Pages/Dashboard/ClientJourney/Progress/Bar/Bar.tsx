@@ -29,7 +29,6 @@ export default function Bar({ title, done, current, isFirst, isLast }: BarProps)
   } else if (isLast) {
     clipPath = "polygon(12px 0, 100% 0, 100% 100%, 0 100%)"; 
   } else {
-    // clipPath = "polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)"; 
     clipPath = "polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)"; 
 
   }
@@ -41,26 +40,30 @@ export default function Bar({ title, done, current, isFirst, isLast }: BarProps)
         flexDirection: "column",
         alignItems: "center",
         flex: 1,
+        width: "100%",
       }}
     >
-    {/* Progress bar with angled edges */}
-    <Box
+      {/* Progress bar with angled edges */}
+      <Box
         sx={{
-        width: "100%",
-        height: current ? "15px" : "10px",
-        backgroundColor: barColor,
-        clipPath,
-        boxShadow,
+          width: "100%",
+          height: current ? "16px" : "10px",
+          backgroundColor: barColor,
+          clipPath: {
+            xs: "none",
+            sm: clipPath,
+          },
+          boxShadow,
         }}
-    />
-
-    <Typography
+      />
+      <Typography
         sx={{
           fontSize: current ? "14px" : "12px",
           fontWeight: current ? "bold" : 600,
           color: textColor,
-          marginTop: "8px",
+          mt: "8px",
           textAlign: "center",
+          wordBreak: "break-word",
         }}
       >
         {title}
