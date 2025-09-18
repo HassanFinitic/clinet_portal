@@ -14,21 +14,26 @@ export default function Progress() {
   ];
 
   return (
-    <Box sx={{ 
-        display: "flex", 
-        gap: "0px", 
-        alignItems: "center", 
-        width: "80%", 
-        margin: "20px auto" 
-    }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", sm: "row" },
+        gap: { xs: 2, sm: 0 },
+        alignItems: "center",
+        width: "100%",
+        maxWidth: "80%",
+        mx: "auto",
+        justifyContent: "center",
+        my: "20px",
+        p: { xs: 2, sm: 0 },
+      }}
+    >
       {steps.map((step, index) => (
         <Bar
           key={index}
           title={step.title}
           done={step.done}
           current={step.current}
-        //   isFirst={index === 0}
-        //   isLast={index === steps.length - 1}
         />
       ))}
     </Box>
