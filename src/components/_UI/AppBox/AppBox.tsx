@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import type { SxProps } from '@mui/material';
 
-export default function AppBox({ children, sx }: { children: React.ReactNode; sx?: SxProps }) {
+export default function AppBox({ children, sx, onClick }: { children: React.ReactNode; sx?: SxProps; onClick?: () => void }) {
   return (
     <Box
       sx={{
@@ -14,6 +14,7 @@ export default function AppBox({ children, sx }: { children: React.ReactNode; sx
           marginBottom: "16px",
           ...sx
       }}
+      onClick={onClick}
     >
         {children}
     </Box>
